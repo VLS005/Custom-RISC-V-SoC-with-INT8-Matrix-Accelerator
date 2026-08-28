@@ -38,14 +38,14 @@ A synthesizable System-on-Chip (SoC) targeting AMD Artix-7 FPGAs (Nexys-A7), int
 ## Directory Structure
 
 ```
-├── doc/                 # Architecture specifications, diagrams, register maps[cite: 1]
-├── fpga/                # Vivado project scripts, constraints (.xdc), top-level wrappers[cite: 1]
+├── doc/                 # Architecture specifications, diagrams, register maps
+├── fpga/                # Vivado project scripts, constraints (.xdc), top-level wrappers
 ├── rtl/                 # Synthesizable SystemVerilog/Verilog source files[cite: 1]
 │   ├── core/            # RISC-V CPU core and wrapper logic
 │   ├── bus/             # AXI4-Lite crossbar, arbiters, decoders
 │   ├── accelerator/     # INT8 MAC array, accumulators, quantization units
 │   └── peripherals/     # BRAM controller, UART controller, timer
-├── sim/                 # cocotb testbenches, Python golden models, Makefiles[cite: 1]
+├── sim/                 # cocotb testbenches, Python golden models, Makefiles
 └── sw/                  # Bare-metal C test programs, linker scripts, startup code
     ├── drivers/         # Peripheral driver headers (UART, MAC MMIO)
     └── tests/           # Functional tests and matrix multiplication benchmarks
