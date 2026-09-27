@@ -1,0 +1,3 @@
+[submodule "rtl/core/picorv32"]
+	path = rtl/core/picorv32
+	url = https://github.com/YosysHQ/picorv32
