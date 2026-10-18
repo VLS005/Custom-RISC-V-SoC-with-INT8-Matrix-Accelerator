@@ -101,7 +101,7 @@ module picorv32 #(
 
 	output reg [31:0] mem_addr,
 	output reg [31:0] mem_wdata,
-	output reg [ 3:0] mem_wstrb,
+	output reg [ 3:0] mem_wstrb, // differentiates between read and write operation
 	input      [31:0] mem_rdata,
 
 	// Look-Ahead Interface
