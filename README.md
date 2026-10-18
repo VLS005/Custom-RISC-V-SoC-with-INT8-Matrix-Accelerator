@@ -1,13 +1,13 @@
 # Custom-RISC-V-SoC-with-INT8-Matrix-Accelerator
 
-A synthesizable System-on-Chip (SoC) targeting AMD Artix-7 FPGAs (Nexys-A7), integrating a 32-bit RISC-V CPU core with a custom AXI4-Lite interconnect, memory-mapped peripherals, and a dedicated INT8 Multiply-Accumulate (MAC) matrix acceleration engine.
+A synthesizable System-on-Chip (SoC) targeting Xilinx Artix-7 FPGA Nexys-A7, integrating a 32-bit RISC-V CPU core with a custom AXI4-Lite interconnect, memory-mapped peripherals, and a dedicated INT8 Multiply-Accumulate (MAC) matrix acceleration engine.
 
 ## Key Subsystems
 
-* **CPU Core:** Integrated 32-bit RV32I core (baseline design using PicoRV32 architecture, then migrating to lowRISC Ibex pipelined core).
+* **CPU Core:** Integrated 32-bit RV32I core (baseline design using PicoRV32 architecture, then migrating to lowRISC Ibex pipelined core). 
 
 
-* **Interconnect:** Custom synthesizable AXI4-Lite bus matrix implementing full 5-channel transaction handshaking (`AR`, `R`, `AW`, `W`, `B`), address decoding, and peripheral routing.
+* **Interconnect:** Custom synthesizable AXI4-Lite bus matrix implementing full the 5-channel transaction handshaking (`AR`, `R`, `AW`, `W`, `B`), address decoding, and peripheral routing. 
 
 
 * **INT8 MAC Accelerator:** Dedicated hardware datapath featuring an array of INT8 signed multipliers, 32-bit accumulators, hardware ReLU activation, and fixed-point quantization scaling.
