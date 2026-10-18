@@ -4,7 +4,7 @@ A synthesizable System-on-Chip (SoC) targeting AMD Artix-7 FPGAs (Nexys-A7), int
 
 ## Key Subsystems
 
-* **CPU Core:** Integrated 32-bit RV32I core (PicoRV32 for baseline bring-up, migrating to lowRISC Ibex pipelined core).
+* **CPU Core:** Integrated 32-bit RV32I core (baseline design using PicoRV32 architecture, then migrating to lowRISC Ibex pipelined core).
 
 
 * **Interconnect:** Custom synthesizable AXI4-Lite bus matrix implementing full 5-channel transaction handshaking (`AR`, `R`, `AW`, `W`, `B`), address decoding, and peripheral routing.
